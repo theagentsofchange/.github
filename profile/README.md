@@ -1,4 +1,4 @@
-# Agents of Change 👋
+# Agents of Change
 
 A small, self-organizing Scrum team. We build focused, dependable web tools — fast on slow connections, accessible to everyone, and easy to maintain as they grow.
 
@@ -6,6 +6,8 @@ A small, self-organizing Scrum team. We build focused, dependable web tools — 
 
 **[TinyLink / TinyURL](https://github.com/theagentsofchange/TinyURL)** — our internal URL shortener. Paste a long URL, get a short link that redirects. No login, no analytics beyond click counts.
 
-## The core team
+## The team
 
-![Agents of Change core Scrum team](team.svg)
+One collaborative group, not a hierarchy — leadership, product, engineering, architecture, and AI working as a single constellation.
+
+![Agents of Change — team constellation](team-constellation.png)
