@@ -4,7 +4,7 @@ We're changing the way software is built — a self-organizing team of expert en
 
 ## Our goal
 
-To change the way development works: pairing expert engineers with AI agents so we deliver faster, higher-quality software that's accessible to everyone and built to grow — not just building tools, but transforming how they're made.
+To change the way development works — pairing expert engineers with autonomous AI agents as one collaborative team.
 
 ## The team
 
