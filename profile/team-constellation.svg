@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Agents of Change — core team constellation</title>
+  <desc id="desc">Six core team members — Iris (Product Owner), Magnus (Scrum Master), Nova (Backend Developer), Lux (Frontend Developer), Talia (Requirements Engineer, Functional) and Ruben (Requirements Engineer, NFR &amp; Compliance) — orbiting the Agents of Change mission.</desc>
+
   <defs>
-    <radialGradient id="bg" cx="0.5" cy="0.48" r="0.78">
-      <stop offset="0%" stop-color="#121a38"/>
+    <radialGradient id="bg" cx="0.5" cy="0.5" r="0.85">
+      <stop offset="0%" stop-color="#141d3d"/>
       <stop offset="55%" stop-color="#0a1024"/>
       <stop offset="100%" stop-color="#060914"/>
     </radialGradient>
@@ -22,127 +24,106 @@
       <circle cx="62" cy="44" r="1.1" fill="#94a3b8" opacity="0.16"/>
       <circle cx="24" cy="58" r="0.7" fill="#94a3b8" opacity="0.2"/>
     </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .name  { font-family: "Segoe UI","DejaVu Sans",Helvetica,Arial,sans-serif; font-size: 21px; font-weight: 700; fill: #F8FAFC; }
+      .role  { font-family: "Segoe UI","DejaVu Sans",Helvetica,Arial,sans-serif; font-size: 13.5px; font-weight: 400; fill: #A5B4FC; }
+      .role2 { font-family: "Segoe UI","DejaVu Sans",Helvetica,Arial,sans-serif; font-size: 12px; font-weight: 400; fill: #94A3B8; }
+      .emoji { font-family: "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Segoe UI Symbol",sans-serif; font-size: 34px; }
+    </style>
   </defs>
 
-  <rect width="1920" height="1080" fill="url(#bg)"/>
-  <rect width="1920" height="1080" fill="url(#dots)"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
 
-  <!-- faint outer constellation ring -->
-  <circle cx="960" cy="540" r="430" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="1.2" stroke-dasharray="2 14"/>
-  <circle cx="960" cy="540" r="318" fill="none" stroke="rgba(148,163,184,0.10)" stroke-width="1.2" stroke-dasharray="1 10"/>
+  <!-- faint outer rings -->
+  <circle cx="800" cy="450" r="380" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="1.2" stroke-dasharray="2 14"/>
+  <circle cx="800" cy="450" r="300" fill="none" stroke="rgba(148,163,184,0.10)" stroke-width="1.2" stroke-dasharray="1 10"/>
 
-  <!-- network edges (behind nodes) — collaboration, not hierarchy -->
+  <!-- network edges: hub spokes + hexagon ring (collaboration, not hierarchy) -->
   <g fill="none" stroke-linecap="round">
-    <!-- pentagon -->
-    <line x1="960" y1="165" x2="1317" y2="424" stroke="rgba(167,139,250,0.45)" stroke-width="2"/>
-    <line x1="1317" y1="424" x2="1181" y2="843" stroke="rgba(52,211,153,0.38)" stroke-width="2"/>
-    <line x1="1181" y1="843" x2="739" y2="843" stroke="rgba(232,121,249,0.38)" stroke-width="2"/>
-    <line x1="739" y1="843" x2="603" y2="424" stroke="rgba(251,191,36,0.38)" stroke-width="2"/>
-    <line x1="603" y1="424" x2="960" y2="165" stroke="rgba(34,211,238,0.38)" stroke-width="2"/>
-    <!-- hub spokes -->
-    <line x1="960" y1="410" x2="960" y2="275" stroke="rgba(167,139,250,0.55)" stroke-width="2.2"/>
-    <line x1="1090" y1="500" x2="1177" y2="424" stroke="rgba(34,211,238,0.5)" stroke-width="2.2"/>
-    <line x1="1040" y1="650" x2="1181" y2="743" stroke="rgba(52,211,153,0.5)" stroke-width="2.2"/>
-    <line x1="880" y1="650" x2="739" y2="743" stroke="rgba(232,121,249,0.5)" stroke-width="2.2"/>
-    <line x1="830" y1="500" x2="743" y2="424" stroke="rgba(251,191,36,0.5)" stroke-width="2.2"/>
-    <!-- extra collaboration chords -->
-    <line x1="1317" y1="424" x2="739" y2="843" stroke="rgba(148,163,184,0.18)" stroke-width="1.4" stroke-dasharray="6 8"/>
-    <line x1="603" y1="424" x2="1181" y2="843" stroke="rgba(148,163,184,0.18)" stroke-width="1.4" stroke-dasharray="6 8"/>
+    <line x1="800" y1="450" x2="800" y2="130" stroke="rgba(167,139,250,0.30)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="1077" y2="290" stroke="rgba(34,211,238,0.28)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="1077" y2="610" stroke="rgba(52,211,153,0.28)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="800" y2="770" stroke="rgba(232,121,249,0.28)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="523" y2="610" stroke="rgba(251,191,36,0.28)" stroke-width="1.6"/>
+    <line x1="800" y1="450" x2="523" y2="290" stroke="rgba(167,139,250,0.28)" stroke-width="1.6"/>
+    <line x1="800" y1="130" x2="1077" y2="290" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="1077" y1="290" x2="1077" y2="610" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="1077" y1="610" x2="800" y2="770" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="800" y1="770" x2="523" y2="610" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="523" y1="610" x2="523" y2="290" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
+    <line x1="523" y1="290" x2="800" y2="130" stroke="rgba(148,163,184,0.16)" stroke-width="1.2" stroke-dasharray="5 7"/>
   </g>
-
-  <!-- connection nodes -->
-  <circle cx="960" cy="165" r="6" fill="#a78bfa"/>
-  <circle cx="1317" cy="424" r="6" fill="#22d3ee"/>
-  <circle cx="1181" cy="843" r="6" fill="#34d399"/>
-  <circle cx="739" cy="843" r="6" fill="#e879f9"/>
-  <circle cx="603" cy="424" r="6" fill="#fbbf24"/>
 
   <!-- ================= HUB ================= -->
   <g>
-    <circle cx="960" cy="540" r="168" fill="none" stroke="url(#hubRing)" stroke-width="2" opacity="0.35"/>
-    <circle cx="960" cy="540" r="148" fill="url(#hubFill)" stroke="url(#hubRing)" stroke-width="3.2"/>
-    <text x="960" y="512" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="18" font-weight="700" fill="#a5b4fc" letter-spacing="6" text-anchor="middle">ONE TEAM</text>
-    <text x="960" y="554" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="28" font-weight="700" fill="#f8fafc" letter-spacing="3" text-anchor="middle">AGENTS OF</text>
-    <text x="960" y="590" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="28" font-weight="700" fill="#f8fafc" letter-spacing="4" text-anchor="middle">CHANGE</text>
-    <text x="960" y="628" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#94a3b8" text-anchor="middle">transforming software through AI</text>
+    <circle cx="800" cy="450" r="152" fill="none" stroke="url(#hubRing)" stroke-width="2" opacity="0.35"/>
+    <circle cx="800" cy="450" r="134" fill="url(#hubFill)" stroke="url(#hubRing)" stroke-width="3" filter="url(#glow)"/>
+    <text x="800" y="418" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="14" font-weight="700" fill="#a5b4fc" letter-spacing="6" text-anchor="middle">ONE TEAM</text>
+    <text x="800" y="452" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="25" font-weight="700" fill="#f8fafc" letter-spacing="3" text-anchor="middle">AGENTS OF</text>
+    <text x="800" y="484" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="25" font-weight="700" fill="#f8fafc" letter-spacing="4" text-anchor="middle">CHANGE</text>
+    <text x="800" y="522" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#94a3b8" text-anchor="middle">changing the way development works</text>
   </g>
 
-  <!-- ================= LEADERSHIP (top) ================= -->
+  <!-- ================= MEMBERS ================= -->
+
+  <!-- Iris — Product Owner (top) -->
   <g>
-    <rect x="820" y="55" width="280" height="200" rx="22" fill="rgba(139,92,246,0.10)" stroke="rgba(167,139,250,0.65)" stroke-width="1.8"/>
-    <!-- compass icon -->
-    <circle cx="960" cy="92" r="18" fill="rgba(167,139,250,0.18)" stroke="#c4b5fd" stroke-width="1.6"/>
-    <path d="M960 78 L966 92 L960 106 L954 92 Z" fill="#c4b5fd"/>
-    <text x="960" y="132" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="20" font-weight="700" fill="#ede9fe" letter-spacing="3" text-anchor="middle">LEADERSHIP</text>
-    <rect x="870" y="148" width="240" height="26" rx="13" fill="rgba(167,139,250,0.16)"/>
-    <text x="990" y="166" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#ddd6fe" text-anchor="middle">Management</text>
-    <rect x="870" y="180" width="240" height="26" rx="13" fill="rgba(167,139,250,0.16)"/>
-    <text x="990" y="198" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#ddd6fe" text-anchor="middle">Strategy</text>
-    <rect x="870" y="212" width="240" height="26" rx="13" fill="rgba(167,139,250,0.16)"/>
-    <text x="990" y="230" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#ddd6fe" text-anchor="middle">Governance</text>
+    <rect x="680" y="50" width="240" height="160" rx="18" fill="rgba(52,168,83,0.08)" stroke="rgba(52,168,83,0.55)" stroke-width="1.6"/>
+    <circle cx="800" cy="98" r="32" fill="rgba(52,168,83,0.16)" stroke="rgba(52,168,83,0.45)"/>
+    <text class="emoji" x="800" y="98" text-anchor="middle" dominant-baseline="central">🌿</text>
+    <text class="name" x="800" y="150" text-anchor="middle">Iris</text>
+    <text class="role" x="800" y="174" text-anchor="middle">Product Owner</text>
   </g>
 
-  <!-- ================= ENGINEERING (upper right) ================= -->
+  <!-- Magnus — Scrum Master (top-left) -->
   <g>
-    <rect x="1177" y="324" width="280" height="200" rx="22" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.6)" stroke-width="1.8"/>
-    <!-- code brackets icon -->
-    <circle cx="1317" cy="361" r="18" fill="rgba(34,211,238,0.16)" stroke="#67e8f9" stroke-width="1.6"/>
-    <path d="M1309 354 L1303 361 L1309 368" fill="none" stroke="#a5f3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M1325 354 L1331 361 L1325 368" fill="none" stroke="#a5f3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="1317" y="401" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="20" font-weight="700" fill="#e0f2fe" letter-spacing="3" text-anchor="middle">ENGINEERING</text>
-    <rect x="1227" y="417" width="240" height="26" rx="13" fill="rgba(34,211,238,0.14)"/>
-    <text x="1347" y="435" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#cffafe" text-anchor="middle">Developers</text>
-    <rect x="1227" y="449" width="240" height="26" rx="13" fill="rgba(34,211,238,0.14)"/>
-    <text x="1347" y="467" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#cffafe" text-anchor="middle">Software Engineers</text>
-    <rect x="1227" y="481" width="240" height="26" rx="13" fill="rgba(34,211,238,0.14)"/>
-    <text x="1347" y="499" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#cffafe" text-anchor="middle">Technical Leads</text>
+    <rect x="403" y="210" width="240" height="160" rx="18" fill="rgba(14,165,233,0.08)" stroke="rgba(14,165,233,0.55)" stroke-width="1.6"/>
+    <circle cx="523" cy="258" r="32" fill="rgba(14,165,233,0.16)" stroke="rgba(14,165,233,0.45)"/>
+    <text class="emoji" x="523" y="258" text-anchor="middle" dominant-baseline="central">🧭</text>
+    <text class="name" x="523" y="310" text-anchor="middle">Magnus</text>
+    <text class="role" x="523" y="334" text-anchor="middle">Scrum Master</text>
   </g>
 
-  <!-- ================= ARCHITECTURE (lower right) ================= -->
+  <!-- Nova — Backend Developer (top-right) -->
   <g>
-    <rect x="1041" y="743" width="280" height="200" rx="22" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.58)" stroke-width="1.8"/>
-    <!-- hex icon -->
-    <circle cx="1181" cy="780" r="18" fill="rgba(52,211,153,0.16)" stroke="#6ee7b7" stroke-width="1.6"/>
-    <path d="M1181 768 L1190 773 L1190 787 L1181 792 L1172 787 L1172 773 Z" fill="none" stroke="#6ee7b7" stroke-width="1.5"/>
-    <text x="1181" y="820" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="20" font-weight="700" fill="#d1fae5" letter-spacing="3" text-anchor="middle">ARCHITECTURE</text>
-    <rect x="1091" y="841" width="240" height="28" rx="14" fill="rgba(52,211,153,0.14)"/>
-    <text x="1211" y="860" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#a7f3d0" text-anchor="middle">Solution Architects</text>
-    <rect x="1091" y="877" width="240" height="28" rx="14" fill="rgba(52,211,153,0.14)"/>
-    <text x="1211" y="896" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#a7f3d0" text-anchor="middle">Technical Architects</text>
+    <rect x="957" y="210" width="240" height="160" rx="18" fill="rgba(100,116,139,0.14)" stroke="rgba(148,163,184,0.55)" stroke-width="1.6"/>
+    <circle cx="1077" cy="258" r="32" fill="rgba(100,116,139,0.22)" stroke="rgba(148,163,184,0.5)"/>
+    <text class="emoji" x="1077" y="258" text-anchor="middle" dominant-baseline="central">⚙️</text>
+    <text class="name" x="1077" y="310" text-anchor="middle">Nova</text>
+    <text class="role" x="1077" y="334" text-anchor="middle">Backend Developer</text>
   </g>
 
-  <!-- ================= AI &amp; AUTOMATION (lower left) ================= -->
+  <!-- Ruben — Requirements Engineer NFR (bottom-right) -->
   <g>
-    <rect x="599" y="743" width="280" height="200" rx="22" fill="rgba(232,121,249,0.08)" stroke="rgba(232,121,249,0.58)" stroke-width="1.8"/>
-    <!-- neural nodes icon -->
-    <circle cx="739" cy="780" r="18" fill="rgba(232,121,249,0.16)" stroke="#f0abfc" stroke-width="1.6"/>
-    <circle cx="733" cy="774" r="3" fill="#f5d0fe"/>
-    <circle cx="745" cy="774" r="3" fill="#f5d0fe"/>
-    <circle cx="739" cy="786" r="3" fill="#f5d0fe"/>
-    <line x1="733" y1="774" x2="739" y2="786" stroke="#f5d0fe" stroke-width="1"/>
-    <line x1="745" y1="774" x2="739" y2="786" stroke="#f5d0fe" stroke-width="1"/>
-    <line x1="733" y1="774" x2="745" y2="774" stroke="#f5d0fe" stroke-width="1"/>
-    <text x="739" y="820" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="18" font-weight="700" fill="#fae8ff" letter-spacing="2" text-anchor="middle">AI &amp; AUTOMATION</text>
-    <rect x="649" y="841" width="240" height="26" rx="13" fill="rgba(232,121,249,0.14)"/>
-    <text x="769" y="859" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#f5d0fe" text-anchor="middle">AI Specialists</text>
-    <rect x="649" y="873" width="240" height="26" rx="13" fill="rgba(232,121,249,0.14)"/>
-    <text x="769" y="891" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#f5d0fe" text-anchor="middle">Agent Designers</text>
-    <rect x="649" y="905" width="240" height="26" rx="13" fill="rgba(232,121,249,0.14)"/>
-    <text x="769" y="923" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#f5d0fe" text-anchor="middle">Automation Engineers</text>
+    <rect x="957" y="530" width="240" height="160" rx="18" fill="rgba(99,102,241,0.09)" stroke="rgba(99,102,241,0.55)" stroke-width="1.6"/>
+    <circle cx="1077" cy="578" r="32" fill="rgba(99,102,241,0.16)" stroke="rgba(99,102,241,0.45)"/>
+    <text class="emoji" x="1077" y="578" text-anchor="middle" dominant-baseline="central">⚖️</text>
+    <text class="name" x="1077" y="630" text-anchor="middle">Ruben</text>
+    <text class="role" x="1077" y="654" text-anchor="middle">Requirements Engineer</text>
+    <text class="role2" x="1077" y="672" text-anchor="middle">NFR &amp; Compliance</text>
   </g>
 
-  <!-- ================= PRODUCT &amp; INNOVATION (upper left) ================= -->
+  <!-- Talia — Requirements Engineer Functional (bottom) -->
   <g>
-    <rect x="463" y="324" width="280" height="200" rx="22" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.6)" stroke-width="1.8"/>
-    <!-- spark icon -->
-    <circle cx="603" cy="361" r="18" fill="rgba(251,191,36,0.16)" stroke="#fbbf24" stroke-width="1.6"/>
-    <path d="M603 349 L606 358 L615 361 L606 364 L603 373 L600 364 L591 361 L600 358 Z" fill="#fde68a"/>
-    <text x="603" y="401" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="16.5" font-weight="700" fill="#fef3c7" letter-spacing="1.5" text-anchor="middle">PRODUCT &amp; INNOVATION</text>
-    <rect x="513" y="417" width="240" height="26" rx="13" fill="rgba(251,191,36,0.14)"/>
-    <text x="633" y="435" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#fde68a" text-anchor="middle">Product Owners</text>
-    <rect x="513" y="449" width="240" height="26" rx="13" fill="rgba(251,191,36,0.14)"/>
-    <text x="633" y="467" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#fde68a" text-anchor="middle">Business Analysts</text>
-    <rect x="513" y="481" width="240" height="26" rx="13" fill="rgba(251,191,36,0.14)"/>
-    <text x="633" y="499" font-family="'Segoe UI','DejaVu Sans',sans-serif" font-size="13.5" fill="#fde68a" text-anchor="middle">Innovation Leads</text>
+    <rect x="680" y="690" width="240" height="160" rx="18" fill="rgba(245,158,11,0.09)" stroke="rgba(245,158,11,0.55)" stroke-width="1.6"/>
+    <circle cx="800" cy="738" r="32" fill="rgba(245,158,11,0.16)" stroke="rgba(245,158,11,0.45)"/>
+    <text class="emoji" x="800" y="738" text-anchor="middle" dominant-baseline="central">📝</text>
+    <text class="name" x="800" y="790" text-anchor="middle">Talia</text>
+    <text class="role" x="800" y="814" text-anchor="middle">Requirements Engineer</text>
+    <text class="role2" x="800" y="832" text-anchor="middle">Functional</text>
+  </g>
+
+  <!-- Lux — Frontend Developer (bottom-left) -->
+  <g>
+    <rect x="403" y="530" width="240" height="160" rx="18" fill="rgba(139,92,246,0.10)" stroke="rgba(139,92,246,0.6)" stroke-width="1.6"/>
+    <circle cx="523" cy="578" r="32" fill="rgba(139,92,246,0.18)" stroke="rgba(139,92,246,0.5)"/>
+    <text class="emoji" x="523" y="578" text-anchor="middle" dominant-baseline="central">🎨</text>
+    <text class="name" x="523" y="630" text-anchor="middle">Lux</text>
+    <text class="role" x="523" y="654" text-anchor="middle">Frontend Developer</text>
   </g>
 </svg>

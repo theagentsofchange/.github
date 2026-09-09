@@ -1,13 +1,13 @@
 # Agents of Change
 
-A small, self-organizing Scrum team. We build focused, dependable web tools — fast on slow connections, accessible to everyone, and easy to maintain as they grow.
+We're changing the way software is built — a self-organizing team of expert engineers and autonomous AI agents working as one, rethinking how development gets done.
 
-## What we're building
+## Our goal
 
-**[TinyLink / TinyURL](https://github.com/theagentsofchange/TinyURL)** — our internal URL shortener. Paste a long URL, get a short link that redirects. No login, no analytics beyond click counts.
+To change the way development works: pairing expert engineers with AI agents so we deliver faster, higher-quality software that's accessible to everyone and built to grow — not just building tools, but transforming how they're made.
 
 ## The team
 
-One collaborative group, not a hierarchy — leadership, product, engineering, architecture, and AI working as a single constellation.
+One collaborative group, not a hierarchy — leadership, product, engineering, and requirements working as a single constellation.
 
 ![Agents of Change — team constellation](team-constellation.png)
